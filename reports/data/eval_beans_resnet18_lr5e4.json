@@ -1,0 +1,1669 @@
+{
+  "model_dir": "artifacts/beans_resnet18_lr5e4",
+  "classes": [
+    "angular_leaf_spot",
+    "bean_rust",
+    "healthy"
+  ],
+  "total_params": 11178051,
+  "classifier_params": 1539,
+  "splits": {
+    "train": {
+      "count": 1034,
+      "correct": 834,
+      "accuracy": 0.8066,
+      "per_class": {
+        "angular_leaf_spot": {
+          "support": 345,
+          "correct": 329,
+          "precision": 0.684,
+          "recall": 0.9536,
+          "f1": 0.7966
+        },
+        "bean_rust": {
+          "support": 348,
+          "correct": 187,
+          "precision": 0.959,
+          "recall": 0.5374,
+          "f1": 0.6888
+        },
+        "healthy": {
+          "support": 341,
+          "correct": 318,
+          "precision": 0.8883,
+          "recall": 0.9326,
+          "f1": 0.9099
+        }
+      },
+      "confusion_matrix": [
+        [
+          329,
+          5,
+          11
+        ],
+        [
+          132,
+          187,
+          29
+        ],
+        [
+          20,
+          3,
+          318
+        ]
+      ],
+      "wrong": [
+        {
+          "file": "angular_leaf_spot_train.14.jpg",
+          "true": "angular_leaf_spot",
+          "pred": "healthy",
+          "score": 0.4442
+        },
+        {
+          "file": "angular_leaf_spot_train.167.jpg",
+          "true": "angular_leaf_spot",
+          "pred": "healthy",
+          "score": 0.4977
+        },
+        {
+          "file": "angular_leaf_spot_train.171.jpg",
+          "true": "angular_leaf_spot",
+          "pred": "bean_rust",
+          "score": 0.4325
+        },
+        {
+          "file": "angular_leaf_spot_train.182.jpg",
+          "true": "angular_leaf_spot",
+          "pred": "healthy",
+          "score": 0.6693
+        },
+        {
+          "file": "angular_leaf_spot_train.19.jpg",
+          "true": "angular_leaf_spot",
+          "pred": "healthy",
+          "score": 0.7008
+        },
+        {
+          "file": "angular_leaf_spot_train.197.jpg",
+          "true": "angular_leaf_spot",
+          "pred": "bean_rust",
+          "score": 0.4309
+        },
+        {
+          "file": "angular_leaf_spot_train.201.jpg",
+          "true": "angular_leaf_spot",
+          "pred": "healthy",
+          "score": 0.8866
+        },
+        {
+          "file": "angular_leaf_spot_train.206.jpg",
+          "true": "angular_leaf_spot",
+          "pred": "healthy",
+          "score": 0.5374
+        },
+        {
+          "file": "angular_leaf_spot_train.227.jpg",
+          "true": "angular_leaf_spot",
+          "pred": "healthy",
+          "score": 0.5906
+        },
+        {
+          "file": "angular_leaf_spot_train.229.jpg",
+          "true": "angular_leaf_spot",
+          "pred": "healthy",
+          "score": 0.5518
+        },
+        {
+          "file": "angular_leaf_spot_train.271.jpg",
+          "true": "angular_leaf_spot",
+          "pred": "healthy",
+          "score": 0.4558
+        },
+        {
+          "file": "angular_leaf_spot_train.274.jpg",
+          "true": "angular_leaf_spot",
+          "pred": "bean_rust",
+          "score": 0.3987
+        },
+        {
+          "file": "angular_leaf_spot_train.326.jpg",
+          "true": "angular_leaf_spot",
+          "pred": "bean_rust",
+          "score": 0.5405
+        },
+        {
+          "file": "angular_leaf_spot_train.336.jpg",
+          "true": "angular_leaf_spot",
+          "pred": "healthy",
+          "score": 0.5093
+        },
+        {
+          "file": "angular_leaf_spot_train.47.jpg",
+          "true": "angular_leaf_spot",
+          "pred": "bean_rust",
+          "score": 0.4593
+        },
+        {
+          "file": "angular_leaf_spot_train.55.jpg",
+          "true": "angular_leaf_spot",
+          "pred": "healthy",
+          "score": 0.7637
+        },
+        {
+          "file": "bean_rust_train.0.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7322
+        },
+        {
+          "file": "bean_rust_train.1.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.4851
+        },
+        {
+          "file": "bean_rust_train.10.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5624
+        },
+        {
+          "file": "bean_rust_train.100.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5215
+        },
+        {
+          "file": "bean_rust_train.102.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6258
+        },
+        {
+          "file": "bean_rust_train.103.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5676
+        },
+        {
+          "file": "bean_rust_train.104.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.691
+        },
+        {
+          "file": "bean_rust_train.109.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.4076
+        },
+        {
+          "file": "bean_rust_train.11.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5884
+        },
+        {
+          "file": "bean_rust_train.110.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6501
+        },
+        {
+          "file": "bean_rust_train.113.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4047
+        },
+        {
+          "file": "bean_rust_train.114.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.8053
+        },
+        {
+          "file": "bean_rust_train.115.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7121
+        },
+        {
+          "file": "bean_rust_train.116.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.5688
+        },
+        {
+          "file": "bean_rust_train.118.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7378
+        },
+        {
+          "file": "bean_rust_train.121.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.6937
+        },
+        {
+          "file": "bean_rust_train.123.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.7697
+        },
+        {
+          "file": "bean_rust_train.124.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.62
+        },
+        {
+          "file": "bean_rust_train.126.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.624
+        },
+        {
+          "file": "bean_rust_train.130.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4626
+        },
+        {
+          "file": "bean_rust_train.132.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4708
+        },
+        {
+          "file": "bean_rust_train.136.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5106
+        },
+        {
+          "file": "bean_rust_train.137.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6044
+        },
+        {
+          "file": "bean_rust_train.139.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.8462
+        },
+        {
+          "file": "bean_rust_train.14.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4832
+        },
+        {
+          "file": "bean_rust_train.141.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4772
+        },
+        {
+          "file": "bean_rust_train.143.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6509
+        },
+        {
+          "file": "bean_rust_train.147.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.3871
+        },
+        {
+          "file": "bean_rust_train.149.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5049
+        },
+        {
+          "file": "bean_rust_train.15.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5014
+        },
+        {
+          "file": "bean_rust_train.150.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.4771
+        },
+        {
+          "file": "bean_rust_train.151.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5343
+        },
+        {
+          "file": "bean_rust_train.153.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.479
+        },
+        {
+          "file": "bean_rust_train.154.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5461
+        },
+        {
+          "file": "bean_rust_train.157.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4622
+        },
+        {
+          "file": "bean_rust_train.158.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4522
+        },
+        {
+          "file": "bean_rust_train.159.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6385
+        },
+        {
+          "file": "bean_rust_train.162.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7894
+        },
+        {
+          "file": "bean_rust_train.167.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5573
+        },
+        {
+          "file": "bean_rust_train.168.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.845
+        },
+        {
+          "file": "bean_rust_train.170.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4601
+        },
+        {
+          "file": "bean_rust_train.171.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4257
+        },
+        {
+          "file": "bean_rust_train.173.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.6985
+        },
+        {
+          "file": "bean_rust_train.174.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.536
+        },
+        {
+          "file": "bean_rust_train.178.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.483
+        },
+        {
+          "file": "bean_rust_train.179.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4932
+        },
+        {
+          "file": "bean_rust_train.18.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4278
+        },
+        {
+          "file": "bean_rust_train.180.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5555
+        },
+        {
+          "file": "bean_rust_train.181.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5156
+        },
+        {
+          "file": "bean_rust_train.182.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5472
+        },
+        {
+          "file": "bean_rust_train.185.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5998
+        },
+        {
+          "file": "bean_rust_train.186.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7101
+        },
+        {
+          "file": "bean_rust_train.188.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.4319
+        },
+        {
+          "file": "bean_rust_train.190.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5275
+        },
+        {
+          "file": "bean_rust_train.191.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7763
+        },
+        {
+          "file": "bean_rust_train.192.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6034
+        },
+        {
+          "file": "bean_rust_train.199.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.8018
+        },
+        {
+          "file": "bean_rust_train.200.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5115
+        },
+        {
+          "file": "bean_rust_train.201.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.4151
+        },
+        {
+          "file": "bean_rust_train.204.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4902
+        },
+        {
+          "file": "bean_rust_train.205.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6371
+        },
+        {
+          "file": "bean_rust_train.208.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7345
+        },
+        {
+          "file": "bean_rust_train.21.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6315
+        },
+        {
+          "file": "bean_rust_train.210.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5358
+        },
+        {
+          "file": "bean_rust_train.212.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.466
+        },
+        {
+          "file": "bean_rust_train.213.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.7377
+        },
+        {
+          "file": "bean_rust_train.214.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6989
+        },
+        {
+          "file": "bean_rust_train.215.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5491
+        },
+        {
+          "file": "bean_rust_train.217.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.4187
+        },
+        {
+          "file": "bean_rust_train.218.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5355
+        },
+        {
+          "file": "bean_rust_train.219.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.4594
+        },
+        {
+          "file": "bean_rust_train.222.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7147
+        },
+        {
+          "file": "bean_rust_train.224.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6434
+        },
+        {
+          "file": "bean_rust_train.225.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5913
+        },
+        {
+          "file": "bean_rust_train.229.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4241
+        },
+        {
+          "file": "bean_rust_train.235.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6732
+        },
+        {
+          "file": "bean_rust_train.236.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4181
+        },
+        {
+          "file": "bean_rust_train.238.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7218
+        },
+        {
+          "file": "bean_rust_train.240.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6236
+        },
+        {
+          "file": "bean_rust_train.243.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.506
+        },
+        {
+          "file": "bean_rust_train.244.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6682
+        },
+        {
+          "file": "bean_rust_train.246.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.491
+        },
+        {
+          "file": "bean_rust_train.247.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.3503
+        },
+        {
+          "file": "bean_rust_train.248.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.5491
+        },
+        {
+          "file": "bean_rust_train.251.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6451
+        },
+        {
+          "file": "bean_rust_train.252.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5536
+        },
+        {
+          "file": "bean_rust_train.254.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4586
+        },
+        {
+          "file": "bean_rust_train.258.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.4232
+        },
+        {
+          "file": "bean_rust_train.26.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.7723
+        },
+        {
+          "file": "bean_rust_train.262.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7399
+        },
+        {
+          "file": "bean_rust_train.263.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5782
+        },
+        {
+          "file": "bean_rust_train.265.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6259
+        },
+        {
+          "file": "bean_rust_train.268.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5473
+        },
+        {
+          "file": "bean_rust_train.27.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.842
+        },
+        {
+          "file": "bean_rust_train.271.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6801
+        },
+        {
+          "file": "bean_rust_train.276.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.8625
+        },
+        {
+          "file": "bean_rust_train.278.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.577
+        },
+        {
+          "file": "bean_rust_train.279.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.4831
+        },
+        {
+          "file": "bean_rust_train.28.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.4718
+        },
+        {
+          "file": "bean_rust_train.280.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.598
+        },
+        {
+          "file": "bean_rust_train.284.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.501
+        },
+        {
+          "file": "bean_rust_train.288.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.478
+        },
+        {
+          "file": "bean_rust_train.289.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6875
+        },
+        {
+          "file": "bean_rust_train.29.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.8452
+        },
+        {
+          "file": "bean_rust_train.290.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6968
+        },
+        {
+          "file": "bean_rust_train.291.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4642
+        },
+        {
+          "file": "bean_rust_train.298.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5136
+        },
+        {
+          "file": "bean_rust_train.299.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4981
+        },
+        {
+          "file": "bean_rust_train.30.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4129
+        },
+        {
+          "file": "bean_rust_train.300.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6373
+        },
+        {
+          "file": "bean_rust_train.302.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4706
+        },
+        {
+          "file": "bean_rust_train.303.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4948
+        },
+        {
+          "file": "bean_rust_train.309.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.524
+        },
+        {
+          "file": "bean_rust_train.31.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7156
+        },
+        {
+          "file": "bean_rust_train.310.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.4937
+        },
+        {
+          "file": "bean_rust_train.311.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6636
+        },
+        {
+          "file": "bean_rust_train.316.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.8029
+        },
+        {
+          "file": "bean_rust_train.32.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6005
+        },
+        {
+          "file": "bean_rust_train.325.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5471
+        },
+        {
+          "file": "bean_rust_train.326.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5629
+        },
+        {
+          "file": "bean_rust_train.327.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7256
+        },
+        {
+          "file": "bean_rust_train.330.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.4734
+        },
+        {
+          "file": "bean_rust_train.334.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5643
+        },
+        {
+          "file": "bean_rust_train.337.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5602
+        },
+        {
+          "file": "bean_rust_train.339.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5702
+        },
+        {
+          "file": "bean_rust_train.341.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5486
+        },
+        {
+          "file": "bean_rust_train.342.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4931
+        },
+        {
+          "file": "bean_rust_train.343.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.3974
+        },
+        {
+          "file": "bean_rust_train.347.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.9287
+        },
+        {
+          "file": "bean_rust_train.38.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6679
+        },
+        {
+          "file": "bean_rust_train.43.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.8667
+        },
+        {
+          "file": "bean_rust_train.44.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.8637
+        },
+        {
+          "file": "bean_rust_train.46.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6584
+        },
+        {
+          "file": "bean_rust_train.5.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.3693
+        },
+        {
+          "file": "bean_rust_train.51.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6775
+        },
+        {
+          "file": "bean_rust_train.55.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.508
+        },
+        {
+          "file": "bean_rust_train.6.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6194
+        },
+        {
+          "file": "bean_rust_train.61.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.5317
+        },
+        {
+          "file": "bean_rust_train.64.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4957
+        },
+        {
+          "file": "bean_rust_train.65.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7142
+        },
+        {
+          "file": "bean_rust_train.69.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7974
+        },
+        {
+          "file": "bean_rust_train.70.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.6526
+        },
+        {
+          "file": "bean_rust_train.73.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4725
+        },
+        {
+          "file": "bean_rust_train.74.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7091
+        },
+        {
+          "file": "bean_rust_train.75.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4883
+        },
+        {
+          "file": "bean_rust_train.77.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5608
+        },
+        {
+          "file": "bean_rust_train.8.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6098
+        },
+        {
+          "file": "bean_rust_train.80.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4584
+        },
+        {
+          "file": "bean_rust_train.81.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5597
+        },
+        {
+          "file": "bean_rust_train.82.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.7302
+        },
+        {
+          "file": "bean_rust_train.83.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6379
+        },
+        {
+          "file": "bean_rust_train.84.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7401
+        },
+        {
+          "file": "bean_rust_train.85.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7336
+        },
+        {
+          "file": "bean_rust_train.86.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6169
+        },
+        {
+          "file": "bean_rust_train.87.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7478
+        },
+        {
+          "file": "bean_rust_train.9.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.8342
+        },
+        {
+          "file": "bean_rust_train.90.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5571
+        },
+        {
+          "file": "bean_rust_train.94.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7225
+        },
+        {
+          "file": "bean_rust_train.95.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.394
+        },
+        {
+          "file": "bean_rust_train.97.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5143
+        },
+        {
+          "file": "bean_rust_train.98.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6207
+        },
+        {
+          "file": "healthy_train.106.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.7449
+        },
+        {
+          "file": "healthy_train.132.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.379
+        },
+        {
+          "file": "healthy_train.153.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.5646
+        },
+        {
+          "file": "healthy_train.164.jpg",
+          "true": "healthy",
+          "pred": "bean_rust",
+          "score": 0.4964
+        },
+        {
+          "file": "healthy_train.174.jpg",
+          "true": "healthy",
+          "pred": "bean_rust",
+          "score": 0.4531
+        },
+        {
+          "file": "healthy_train.182.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.6741
+        },
+        {
+          "file": "healthy_train.188.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.5993
+        },
+        {
+          "file": "healthy_train.19.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.3829
+        },
+        {
+          "file": "healthy_train.190.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.6751
+        },
+        {
+          "file": "healthy_train.23.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.5847
+        },
+        {
+          "file": "healthy_train.245.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.4659
+        },
+        {
+          "file": "healthy_train.266.jpg",
+          "true": "healthy",
+          "pred": "bean_rust",
+          "score": 0.4579
+        },
+        {
+          "file": "healthy_train.270.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.6485
+        },
+        {
+          "file": "healthy_train.286.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.6071
+        },
+        {
+          "file": "healthy_train.336.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.7483
+        },
+        {
+          "file": "healthy_train.34.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.5193
+        },
+        {
+          "file": "healthy_train.4.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.547
+        },
+        {
+          "file": "healthy_train.42.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.4079
+        },
+        {
+          "file": "healthy_train.59.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.5447
+        },
+        {
+          "file": "healthy_train.6.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.5914
+        },
+        {
+          "file": "healthy_train.65.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.5627
+        },
+        {
+          "file": "healthy_train.76.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.5756
+        },
+        {
+          "file": "healthy_train.82.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.4061
+        }
+      ],
+      "seconds": 14.5
+    },
+    "val": {
+      "count": 133,
+      "correct": 108,
+      "accuracy": 0.812,
+      "per_class": {
+        "angular_leaf_spot": {
+          "support": 44,
+          "correct": 41,
+          "precision": 0.6949,
+          "recall": 0.9318,
+          "f1": 0.7961
+        },
+        "bean_rust": {
+          "support": 45,
+          "correct": 27,
+          "precision": 0.9,
+          "recall": 0.6,
+          "f1": 0.72
+        },
+        "healthy": {
+          "support": 44,
+          "correct": 40,
+          "precision": 0.9091,
+          "recall": 0.9091,
+          "f1": 0.9091
+        }
+      },
+      "confusion_matrix": [
+        [
+          41,
+          2,
+          1
+        ],
+        [
+          15,
+          27,
+          3
+        ],
+        [
+          3,
+          1,
+          40
+        ]
+      ],
+      "wrong": [
+        {
+          "file": "angular_leaf_spot_val.12.jpg",
+          "true": "angular_leaf_spot",
+          "pred": "bean_rust",
+          "score": 0.4941
+        },
+        {
+          "file": "angular_leaf_spot_val.26.jpg",
+          "true": "angular_leaf_spot",
+          "pred": "healthy",
+          "score": 0.5876
+        },
+        {
+          "file": "angular_leaf_spot_val.37.jpg",
+          "true": "angular_leaf_spot",
+          "pred": "bean_rust",
+          "score": 0.5545
+        },
+        {
+          "file": "bean_rust_val.0.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.4146
+        },
+        {
+          "file": "bean_rust_val.1.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.8188
+        },
+        {
+          "file": "bean_rust_val.15.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4097
+        },
+        {
+          "file": "bean_rust_val.17.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6818
+        },
+        {
+          "file": "bean_rust_val.19.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5429
+        },
+        {
+          "file": "bean_rust_val.2.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.4021
+        },
+        {
+          "file": "bean_rust_val.20.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4387
+        },
+        {
+          "file": "bean_rust_val.27.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5275
+        },
+        {
+          "file": "bean_rust_val.28.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.8091
+        },
+        {
+          "file": "bean_rust_val.33.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5166
+        },
+        {
+          "file": "bean_rust_val.35.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5488
+        },
+        {
+          "file": "bean_rust_val.38.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6222
+        },
+        {
+          "file": "bean_rust_val.4.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7814
+        },
+        {
+          "file": "bean_rust_val.43.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7161
+        },
+        {
+          "file": "bean_rust_val.44.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5928
+        },
+        {
+          "file": "bean_rust_val.5.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.3626
+        },
+        {
+          "file": "bean_rust_val.7.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5896
+        },
+        {
+          "file": "bean_rust_val.9.jpg",
+          "true": "bean_rust",
+          "pred": "healthy",
+          "score": 0.4282
+        },
+        {
+          "file": "healthy_val.0.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.4382
+        },
+        {
+          "file": "healthy_val.23.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.4215
+        },
+        {
+          "file": "healthy_val.3.jpg",
+          "true": "healthy",
+          "pred": "bean_rust",
+          "score": 0.4731
+        },
+        {
+          "file": "healthy_val.36.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.5883
+        }
+      ],
+      "seconds": 1.8
+    },
+    "test": {
+      "count": 128,
+      "correct": 101,
+      "accuracy": 0.7891,
+      "per_class": {
+        "angular_leaf_spot": {
+          "support": 43,
+          "correct": 42,
+          "precision": 0.6269,
+          "recall": 0.9767,
+          "f1": 0.7636
+        },
+        "bean_rust": {
+          "support": 43,
+          "correct": 20,
+          "precision": 0.9524,
+          "recall": 0.4651,
+          "f1": 0.625
+        },
+        "healthy": {
+          "support": 42,
+          "correct": 39,
+          "precision": 0.975,
+          "recall": 0.9286,
+          "f1": 0.9512
+        }
+      },
+      "confusion_matrix": [
+        [
+          42,
+          0,
+          1
+        ],
+        [
+          23,
+          20,
+          0
+        ],
+        [
+          2,
+          1,
+          39
+        ]
+      ],
+      "wrong": [
+        {
+          "file": "angular_leaf_spot_test.36.jpg",
+          "true": "angular_leaf_spot",
+          "pred": "healthy",
+          "score": 0.3712
+        },
+        {
+          "file": "bean_rust_test.1.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5014
+        },
+        {
+          "file": "bean_rust_test.10.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5322
+        },
+        {
+          "file": "bean_rust_test.12.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4968
+        },
+        {
+          "file": "bean_rust_test.14.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.504
+        },
+        {
+          "file": "bean_rust_test.15.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7084
+        },
+        {
+          "file": "bean_rust_test.19.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4967
+        },
+        {
+          "file": "bean_rust_test.20.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.595
+        },
+        {
+          "file": "bean_rust_test.21.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4846
+        },
+        {
+          "file": "bean_rust_test.23.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4153
+        },
+        {
+          "file": "bean_rust_test.28.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5815
+        },
+        {
+          "file": "bean_rust_test.3.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4775
+        },
+        {
+          "file": "bean_rust_test.30.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7785
+        },
+        {
+          "file": "bean_rust_test.31.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.8202
+        },
+        {
+          "file": "bean_rust_test.32.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4493
+        },
+        {
+          "file": "bean_rust_test.36.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7254
+        },
+        {
+          "file": "bean_rust_test.37.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6722
+        },
+        {
+          "file": "bean_rust_test.39.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.5422
+        },
+        {
+          "file": "bean_rust_test.4.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6006
+        },
+        {
+          "file": "bean_rust_test.40.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.4864
+        },
+        {
+          "file": "bean_rust_test.6.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.593
+        },
+        {
+          "file": "bean_rust_test.7.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.61
+        },
+        {
+          "file": "bean_rust_test.8.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.6369
+        },
+        {
+          "file": "bean_rust_test.9.jpg",
+          "true": "bean_rust",
+          "pred": "angular_leaf_spot",
+          "score": 0.7055
+        },
+        {
+          "file": "healthy_test.10.jpg",
+          "true": "healthy",
+          "pred": "bean_rust",
+          "score": 0.6201
+        },
+        {
+          "file": "healthy_test.25.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.3577
+        },
+        {
+          "file": "healthy_test.27.jpg",
+          "true": "healthy",
+          "pred": "angular_leaf_spot",
+          "score": 0.5083
+        }
+      ],
+      "seconds": 1.8
+    }
+  },
+  "train_val_gap": -0.0054
+}

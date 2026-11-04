@@ -1,0 +1,28 @@
+{
+  "base_model": "microsoft/resnet-18",
+  "classes": [
+    "angular_leaf_spot",
+    "bean_rust",
+    "healthy"
+  ],
+  "train_count": 1034,
+  "val_count": 133,
+  "best_val_accuracy": 0.8270676691729323,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.8257,
+      "val_accuracy": 0.8271
+    },
+    {
+      "epoch": 2,
+      "loss": 0.582,
+      "val_accuracy": 0.8045
+    },
+    {
+      "epoch": 3,
+      "loss": 0.498,
+      "val_accuracy": 0.782
+    }
+  ]
+}

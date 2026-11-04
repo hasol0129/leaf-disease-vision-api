@@ -1,0 +1,36 @@
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+모델: artifacts/beans_resnet18_lr5e4
+전체 파라미터 11,178,051 / 분류 헤드 파라미터 1,539
+
+[train] 정확도 0.8066  (834/1034)
+  클래스              precision  recall   f1     (정답/전체)
+  angular_leaf_spot  0.6840    0.9536  0.7966  (329/345)
+  bean_rust          0.9590    0.5374  0.6888  (187/348)
+  healthy            0.8883    0.9326  0.9099  (318/341)
+  혼동행렬 (행=정답, 열=예측, 순서 angular_leaf_spot / bean_rust / healthy)
+    angular_leaf_spot  [329, 5, 11]
+    bean_rust          [132, 187, 29]
+    healthy            [20, 3, 318]
+
+[val] 정확도 0.8120  (108/133)
+  클래스              precision  recall   f1     (정답/전체)
+  angular_leaf_spot  0.6949    0.9318  0.7961  (41/44)
+  bean_rust          0.9000    0.6000  0.7200  (27/45)
+  healthy            0.9091    0.9091  0.9091  (40/44)
+  혼동행렬 (행=정답, 열=예측, 순서 angular_leaf_spot / bean_rust / healthy)
+    angular_leaf_spot  [41, 2, 1]
+    bean_rust          [15, 27, 3]
+    healthy            [3, 1, 40]
+
+[test] 정확도 0.7891  (101/128)
+  클래스              precision  recall   f1     (정답/전체)
+  angular_leaf_spot  0.6269    0.9767  0.7636  (42/43)
+  bean_rust          0.9524    0.4651  0.6250  (20/43)
+  healthy            0.9750    0.9286  0.9512  (39/42)
+  혼동행렬 (행=정답, 열=예측, 순서 angular_leaf_spot / bean_rust / healthy)
+    angular_leaf_spot  [42, 0, 1]
+    bean_rust          [23, 20, 0]
+    healthy            [2, 1, 39]
+
+train - val 정확도 차이(과적합 지표): -0.0054
+저장: reports/data/eval_beans_resnet18_lr5e4.json

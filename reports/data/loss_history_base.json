@@ -1,0 +1,27 @@
+{
+  "classes": [
+    "angular_leaf_spot",
+    "bean_rust",
+    "healthy"
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.9924,
+      "val_loss": 0.8379,
+      "val_accuracy": 0.6617
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.8108,
+      "val_loss": 0.6868,
+      "val_accuracy": 0.7669
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.7078,
+      "val_loss": 0.5911,
+      "val_accuracy": 0.7669
+    }
+  ]
+}
