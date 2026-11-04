@@ -58,7 +58,7 @@ Backbone을 고정하고 새 분류층(전체 11,178,051개 중 **1,539개**)만
 | 2 | 0.8108 | 0.6868 | 0.7669 |
 | 3 | 0.7078 | 0.5911 | 0.7669 |
 
-**진단:** train·val loss가 모두 감소 중이고 val loss 상승이 없어 과적합이 아닌 **학습 부족**. loss가 출렁임 없이 천천히 감소 → learning rate가 작다고 판단.
+**진단:** 마지막 epoch까지 train·val loss가 계속 감소(평평해지지 않음)하고 val loss 상승이 없어 과적합이 아닌 **학습 부족**. 원인 후보는 learning rate(업데이트 크기)와 epoch(학습 횟수)인데 loss 곡선만으로는 구분할 수 없어, **같은 학습 시간을 유지한 채 learning rate만 바꿔** 확인하고 epoch 조정은 다음 실험으로 남김.
 
 ### 2. Improvement — learning rate만 변경
 epochs 3 · batch 8 · Head-only · seed 42를 고정하고 `--lr`만 바꿔 **Validation으로만** 비교했습니다.

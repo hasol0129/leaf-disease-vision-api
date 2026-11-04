@@ -166,9 +166,11 @@ python -m training.finetune --data dataset --output artifacts/beans_resnet18 --e
 ## 7. 개선 실험: learning rate 하나만 변경
 
 ### 7-1. 실험 이유
-- 기준선 train loss 0.9924 → 0.7078, val loss 0.8379 → 0.5911로 **둘 다 감소 중** (val loss 상승 없음) → 과적합이 아니라 **학습 부족**
-- 3 epoch 동안 train loss가 0.9924 → 0.8108 → 0.7078로 **출렁임 없이 천천히** 감소 → 한 번에 고치는 크기(learning rate)가 작다고 판단
-- Head-only는 새로 초기화된 분류층(1,539개)만 학습하므로 learning rate를 키워도 사전학습 특징을 망가뜨릴 위험이 작음
+- **학습 부족 진단:** 충분히 학습됐다면 loss가 더 내려가지 않고 평평해져야 한다. 기준선은 마지막 epoch에서도 train loss(0.8108 → 0.7078)와 val loss(0.6868 → 0.5911)가 계속 감소 중 → 더 배울 여지가 있는 상태에서 학습이 끝남 = **학습 부족**. val loss 상승이 없으므로 과적합은 아님
+- **원인 후보:** ① learning rate가 작음(한 번에 고치는 크기가 작음) ② epoch가 적음(학습 횟수가 부족함). 두 경우 모두 "loss가 천천히 내려가다 학습이 끝나는" 같은 모양이라 **loss 곡선만으로는 구분 불가** → 실험으로 확인
+- **learning rate를 먼저 바꾼 이유:** epoch를 늘리면 학습 횟수와 시간이 함께 늘어난다. **같은 학습 시간(3 epoch) 안에서 더 잘 배우는지**를 먼저 확인하기 위해 epoch는 고정하고 learning rate만 변경. epoch 조정은 다음 실험으로 남김(8장)
+- **안전성:** Head-only는 새로 초기화된 분류층(1,539개)만 학습하므로 learning rate를 키워도 사전학습 특징이 손상될 위험이 없음
+- **확인 방법:** learning rate만 바꿔 val accuracy·val loss가 개선되면, learning rate가 학습 부족의 원인 중 하나였다고 판단
 
 ### 7-2. 실험 설계
 - 바꾼 것: `--lr` **하나만** (0.0002 → 0.0005 / 0.001)
@@ -217,7 +219,8 @@ python -m training.finetune --data dataset --output artifacts/beans_resnet18_lr1
 - C(0.001)는 Best val이 0.8271로 가장 높지만 **epoch 1 이후 계속 하락**(0.8271 → 0.8045 → 0.7820) → 보폭이 커서 불안정
 - B(0.0005)는 **매 epoch 꾸준히 상승**하고 마지막 epoch에 저장, train·val loss도 함께 감소
 - B와 C의 차이는 val 133장 중 **2장(1.5%p)** → 차이가 작을 때는 더 안정적인 쪽을 선택한다는 기준으로 **B를 최종 모델로 선택**
-- 기준선 대비: Validation 0.7669 → **0.8120 (+0.0451, 4.51%p)**, 같은 학습 시간(3 epoch)
+- 기준선 대비: Validation 0.7669 → **0.8120 (+0.0451, 4.51%p)**, Validation Loss 0.5911 → 0.4542, 같은 학습 시간(3 epoch)
+- 결론: 다른 조건이 같은 상태에서 learning rate만 바꿔 개선됐으므로 **learning rate가 학습 부족의 원인 중 하나**였음을 확인. 다만 개선 후에도 loss가 감소 중이고 녹병 혼동이 남아 있어 학습 기간·모델 구조(Head-only)도 추가 요인일 수 있음
 
 ### 7-6. 서비스 반영
 - `.env`의 `MODEL_PATH=artifacts/beans_resnet18_lr5e4`로 변경 → `docker compose up -d --force-recreate web worker`
@@ -230,5 +233,5 @@ python -m training.finetune --data dataset --output artifacts/beans_resnet18_lr1
 
 ## 8. 다음 단계 제안 [미실시]
 - **Full Fine-tuning** (가이드 6-1 B, `--freeze-backbone` 없이 낮은 lr, 별도 폴더 저장) → 같은 Validation으로 비교
-- learning rate 0.0005에서 3 epoch 시점에도 loss가 감소 중 → 학습 기간 조정 검토
+- **epoch 조정 (이번에 남겨둔 변수):** 최종 모델(lr 0.0005)도 마지막 epoch까지 train·val loss가 감소 중 → 학습 기간을 늘려 같은 Validation으로 비교
 - 비교는 Validation으로 끝내고, Test는 최종 선택 모델에만 사용
